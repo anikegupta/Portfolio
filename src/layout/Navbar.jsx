@@ -6,7 +6,8 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
-  { href: "#testimonials", label: "Testimonials" },
+  { href: "#testimonials", label: "Testimonials"},
+  { href: "#contact", label: "Contact"},
 ];
 
 export const Navbar = () => {
@@ -34,7 +35,7 @@ export const Navbar = () => {
           href="#"
           className="text-xl font-bold tracking-tight hover:text-primary"
         >
-          PM<span className="text-primary">.</span>
+          <span className="text-primary">ANIKET GUPTA</span>
         </a>
 
         {/* Desktop Nav */}
@@ -53,9 +54,7 @@ export const Navbar = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="hidden md:block">
-          <Button size="sm">Contact Me</Button>
-        </div>
+        
 
         {/* Mobile Menu Button */}
         <button
@@ -81,9 +80,7 @@ export const Navbar = () => {
               </a>
             ))}
 
-            <Button onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Me
-            </Button>
+            
           </div>
         </div>
       )}

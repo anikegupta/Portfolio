@@ -2,6 +2,7 @@ export const Button = ({
   className = "",
   size = "default",
   children,
+  href,
   ...props
 }) => {
   const baseClasses =
@@ -13,6 +14,17 @@ export const Button = ({
     lg: "px-8 py-4 text-lg",
   };
   const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
+
+  if (href) {
+    return (
+      <a href={href} className={classes} {...props}>
+        <span className="relative flex items-center justify-center gap-2">
+          {children}
+        </span>
+      </a>
+    );
+  }
+
   return (
     <button className={classes} {...props}>
       <span className="relative flex items-center justify-center gap-2">
