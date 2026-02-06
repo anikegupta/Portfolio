@@ -2,40 +2,40 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Bookstore Website",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "A modern online bookstore platform for browsing, searching, and purchasing books with a seamless user experience.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+    tags: ["React", "NodeJS","MongoDB", "CSS3"],
+    link: "https://book-store-iota-tan-47.vercel.app",
+    github: "https://github.com/anikegupta/BookStore",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Expense Tracker",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "An expense tracking website that helps users manage finances and gain clear spending insights.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: ["Next.js", "React", "MongoDB", "CSS3"],
+    link: "https://expense-tracker-next-i5e2-353h0ug5a-anikeguptas-projects.vercel.app",
+    github: "https://github.com/anikegupta/Expense_Tracker_Next",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Weather Forecast",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A weather forecast website providing real-time weather updates and accurate forecasts.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "CSS3", "FastAPI"],
+    link: "https://mausam01.netlify.app",
+    github: "https://github.com/anikegupta/WeatherApp",
   },
   {
-    title: "Project Management Tool",
+    title: "Virtual Assistant",
     description:
-      "A collaborative workspace for teams with real-time updates, task tracking, and integrations.",
+      "An interactive virtual assistant website that simplifies everyday tasks through smart automation.",
     image: "/projects/project4.png",
-    tags: ["Next.js", "Socket.io", "MongoDB", "Redis"],
-    link: "#",
-    github: "#",
+    tags: ["Javascript", "HTML5", "CSS3"],
+    link: "https://vercel.com/anikeguptas-projects/virtual-assistant-c26a",
+    github: "https://github.com/anikegupta/virtual_assistant",
   },
 ];
 
@@ -65,7 +65,7 @@ export const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 ">
           {projects.map((project, idx) => (
             <div
               key={idx}
@@ -93,6 +93,7 @@ export const Projects = () => {
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
+                  target="_blank" rel="noopener noreferrer"
                     href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
